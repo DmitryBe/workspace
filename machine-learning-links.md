@@ -17,3 +17,7 @@ Q-function; what is RL good for
 ### Machine learning in genetics and genomics
 
 * [Machine learning application areas](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5204302/) - Overview of ML as it is applied to problems in genomics
+
+### Dimensionality-reduction techniques
+
+* [Intro to PCA](http://www.lauradhamilton.com/introduction-to-principal-component-analysis-pca) - PCA is a dimensionality-reduction technique that is often used to transform a high-dimensional dataset into a smaller-dimensional subspace prior to running a machine learning algorithm on the data
