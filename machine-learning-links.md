@@ -3,6 +3,7 @@
 ### General
 
 * [AI/ML Reads](http://aireads.top) - Directory of artificial intelligence/machine learning resources
+* [Visual information theory](http://colah.github.io/posts/2015-09-Visual-Information/) - Brilliant explanation of concepts like conditional probability, variable-length codes, optimal encodings, calculating entropy, cross-entropy, mutual info and Kullback–Leibler divergence
 
 ### Reinforcement learning 
 
