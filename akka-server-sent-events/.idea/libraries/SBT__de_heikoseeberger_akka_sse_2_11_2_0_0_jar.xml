@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: de.heikoseeberger:akka-sse_2.11:2.0.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/de.heikoseeberger/akka-sse_2.11/jars/akka-sse_2.11-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/de.heikoseeberger/akka-sse_2.11/srcs/akka-sse_2.11-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
