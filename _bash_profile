@@ -1,0 +1,83 @@
+
+# neural net 
+alias enhance='function ne() { docker run --rm -v "$(pwd)/`dirname ${@:$#}`":/ne/input -it alexjc/neural-enhance ${@:1:-1} "input/`basename ${@:$#}`"; }; ne'
+
+alias show_files='defaults write com.apple.finder AppleShowAllFiles YES;
+killall Finder /System/Library/CoreServices/Finder.app'
+
+alias hide_files='defaults write com.apple.finder AppleShowAllFiles NO;
+killall Finder /System/Library/CoreServices/Finder.app'
+
+# kubernetes
+export PATH="/Users/dmitry/bin:$PATH"
+export PATH=/Users/dmitry/.local/bin:$PATH
+export PATH=/Users/dmitry/kubernetes/:$PATH
+export PATH=/Users/dmitry/workspace/samtools/install/bin/:$PATH
+export PATH=/Users/dmitry/workspace/samtools/install/bowtie2-2.2.9/:$PATH
+export PATH=/Users/dmitry/workspace/activator/bin/:$PATH
+
+# docker
+alias docker-clear-containers='docker rm $(docker ps -a -q)'
+alias docker-clear-images='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
+alias docker-register='eval $(docker-machine env default)'
+
+# aws 
+alias sdrad-bix='export AWS_DEFAULT_PROFILE=sdrad-bix'
+alias sdrad='export AWS_DEFAULT_PROFILE=sdrad'
+alias master='export AWS_DEFAULT_PROFILE='
+alias sdrad-swe='export AWS_DEFAULT_PROFILE=sdrad-swe'
+alias renew-sdrad-swe='create-xacct-keys.py 205134639408 dmitry 136074505599 sdrad-swe;sdrad-swe'
+
+alias vim='/usr/local/Cellar/vim/7.4.2334/bin/vim'
+
+# java
+
+alias set-java8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_91, x86_64`'
+alias set-java7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_79, x86_64`'
+
+# avro
+alias avro-tools='java -jar ~/Tools/avro-tools-1.7.7.jar'
+
+# python
+#alias python=python3
+#alias pip=pip3
+alias start-jupiter='jupyter notebook --notebook-dir=~/workspace/jupiter_notebooks'
+
+# openssl
+export DYLD_LIBRARY_PATH=/usr/local/Cellar/openssl/1.0.2g/lib
+
+# antlr
+alias antlr4='java -jar /usr/local/lib/antlr-4.5.1-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'
+
+# usefull scripts
+function pslisten {
+        echo `lsof -n -i4TCP:$1 | grep LISTEN`
+    }
+
+
+# Prompt
+# --------------------------------------------------------------------
+
+if [ "$PLATFORM" = Linux ]; then
+  source /etc/bash_completion.d/git
+  PS1="[\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1)\n\[\033[1;36m\]\u\[\033[32m\]$ \[\033[0m\]"
+else
+  ### git-prompt
+  __git_ps1() { :;}
+  if [ -e ~/.git-prompt.sh ]; then
+    source ~/.git-prompt.sh
+  fi
+  # PROMPT_COMMAND='history -a; history -c; history -r; printf "\[\e[38;5;59m\]%$(($COLUMNS - 4))s\r" "$(__git_ps1) ($(date +%m/%d\ %H:%M:%S))"'
+  PROMPT_COMMAND='history -a; printf "\[\e[38;5;59m\]%$(($COLUMNS - 4))s\r" "$(__git_ps1) ($(date +%m/%d\ %H:%M:%S))"'
+  source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+  PS1="[\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1)\n\[\033[1;36m\]\u\[\033[32m\]$ \[\
+\033[0m\]"
+fi
+
+
+# ls 
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+alias ls='ls -GFh'
+
