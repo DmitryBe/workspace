@@ -22,3 +22,7 @@ Q-function; what is RL good for
 ### Dimensionality-reduction techniques
 
 * [Intro to PCA](http://www.lauradhamilton.com/introduction-to-principal-component-analysis-pca) - PCA is a dimensionality-reduction technique that is often used to transform a high-dimensional dataset into a smaller-dimensional subspace prior to running a machine learning algorithm on the data
+
+### Gaussian Processes (GP)
+
+* [Gaussian Processes explained] (http://katbailey.github.io/post/gaussian-processes-for-dummies/) - GP provide an alternative approach to regression problems
