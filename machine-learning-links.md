@@ -10,6 +10,8 @@
 * [Reinforcement learning explained](https://www.oreilly.com/ideas/reinforcement-learning-explained) - Common techniques of reinforcement learning
 Q-function; what is RL good for
 
+* [Evolution strategies as a scalable alternative to RL] (https://blog.openai.com/evolution-strategies/?imm_mid=0efaff&cmp=em-data-na-na-newsltr_ai_20170403)
+
 ### Tensorflow
 
 * [Hello tensorflow](https://www.oreilly.com/learning/hello-tensorflow) - Basic concept, simplest computation graph, simple neuron model, visualisation with tensorboard
