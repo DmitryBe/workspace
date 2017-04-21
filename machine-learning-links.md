@@ -10,6 +10,8 @@
 * [Reinforcement learning explained](https://www.oreilly.com/ideas/reinforcement-learning-explained) - Common techniques of reinforcement learning
 Q-function; what is RL good for
 
+* [Evolution strategies as a scalable alternative to RL] (https://blog.openai.com/evolution-strategies/?imm_mid=0efaff&cmp=em-data-na-na-newsltr_ai_20170403)
+
 ### Tensorflow
 
 * [Hello tensorflow](https://www.oreilly.com/learning/hello-tensorflow) - Basic concept, simplest computation graph, simple neuron model, visualisation with tensorboard
@@ -22,3 +24,7 @@ Q-function; what is RL good for
 ### Dimensionality-reduction techniques
 
 * [Intro to PCA](http://www.lauradhamilton.com/introduction-to-principal-component-analysis-pca) - PCA is a dimensionality-reduction technique that is often used to transform a high-dimensional dataset into a smaller-dimensional subspace prior to running a machine learning algorithm on the data
+
+### Gaussian Processes (GP)
+
+* [Gaussian Processes explained] (http://katbailey.github.io/post/gaussian-processes-for-dummies/) - GP provide an alternative approach to regression problems
